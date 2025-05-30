@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+.content {
+    background-color: #fff;
+    max-width: 720px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.title {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
