@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <input type="text" id="email" value="" >
-    <input type="text" id="password" value="" >
-    <button id="deleteAccountBtn">Delete Account</button>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>To delete your account, please provide your email and password below:</div>
+        <br>
+        <div>
+            <span class="span">Email : </span>
+            <input type="text" id="email" value="">
+        </div>
+        <br>
+        <div>
+            <span class="span">Password : </span>
+            <input type="text" id="password" value="">
+        </div>
+        <br>
+        <br>
+        <button id="deleteAccountBtn">Delete Account</button>
+        <style>
+            .span {
+                display: inline-block;
+                width: 100px;
+            }
+        </style>
+        <script>
         document.getElementById("deleteAccountBtn").addEventListener("click", function() {
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
@@ -32,6 +49,6 @@
                 }
             });
         });
-    </script>
-</body>
+        </script>
+    </body>
 </html>
